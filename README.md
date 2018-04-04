@@ -10,7 +10,7 @@ I then used r/all to determine differences in frequency (“RedditFrequency.txt�
 
 I then took subreddits and parsed every word and put them through a calculator. If they were found in either the republican or democratic dictionaries, their percent difference score would be added to the republican or democratic totals (these are not necessarily mutually exclusive). Then I divided by the total number of words and got my “similarity indexes”.
 
-Subreddits that were know to be republican were calculated to be more like r/the_donald and subreddits that were know to be democratic were calculated to be more like r/politics.
+Subreddits that were known to be republican were calculated to be more like r/the_donald and subreddits that were known to be democratic were calculated to be more like r/politics.
 
 So I’m pretty happy with the results!
 
