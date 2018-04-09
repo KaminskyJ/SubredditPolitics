@@ -1,5 +1,6 @@
 # SubredditPolitics
 A quick spring break project which analyzes r/the_donald and r/politics.
+Some short results can be found here: https://imgur.com/a/xhyvJ
 
 By no means is the scientific data, but I did try to make it as scientific as possible.
 
@@ -15,3 +16,6 @@ Subreddits that were known to be republican were calculated to be more like r/th
 So I’m pretty happy with the results!
 
 If you’re from reddit and have any questions, just pm me.
+
+IF YOU WOULD LIKE TO USE THIS CODE:
+Delete all the txt documents and run the scripts in the described order. You can just use my reddit credentials that are in the code, but if those get revoked you will have to create a reddit account and register the bot through their website.
