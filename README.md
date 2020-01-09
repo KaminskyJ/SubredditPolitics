@@ -1,12 +1,13 @@
 # SubredditPolitics
-A quick spring break project which analyzes r/the_donald and r/politics. Some short results can be found here: https://imgur.com/a/xhyvJ
+A quick spring break project which tries to classify political leaning of various subreddits. Some short results can be found here: https://imgur.com/a/xhyvJ
 
-By no means is the scientific data, but I did try to make it as scientific as possible.
 
 Methodology: 
-Initially, I was using every book in Google’s database to generate “normal” word frequencies and then comparing that to subreddit frequencies. Reddit writes way too differently to get good data. Also, I couldn’t figure out a good way to deal with fake words like “ur” and other internet slang. Scratch that. If you want that code, it’s in the old versions folder.
+The overarching idea is to use r/the_donald as the example of a conserative subreddit and r/politics as the example of a liberal subreddit. Then, we can determine the political leaning of various subreddits by seeing how similar the language of a particular subreddit is to r/the_donald and r/politics.
 
-I then used r/all to determine differences in frequency (“RedditFrequency.txt”). I took the percent difference of frequencies to determine the most overused words of r/politics and r/the_donald. I saved those in “RepubsData.txt” and “DemsData.txt”. The top 10 are shown in OverusedWords.png. This turned out to be pretty good looking data. The top words are stereotypically democratic/republican.
+The first step is to determine which words are "overused" in r/the_donald and r/politics. Initially, I was using every book in Google’s database to generate “normal” word frequencies and then comparing that to r/the_donald and r/politics frequencies. But Reddit has way too much slang and alternative spellings for that to work properly. Words like "ur" and "lol" were considered to be political. So I needed to find how r/the_donald and r/politics differed from *normal internet language*.
+
+So I decided to use r/all to determine differences in frequency (“RedditFrequency.txt”). I took the percent difference of frequencies to determine the most overused words of r/politics and r/the_donald. I saved those in “RepubsData.txt” and “DemsData.txt”. The top 10 are shown in OverusedWords.png. This turned out to be pretty reasonable looking. The most overused words are stereotypically liberal/conserative.
 
 I then took subreddits and parsed every word and put them through a calculator. If they were found in either the republican or democratic dictionaries, their percent difference score would be added to the republican or democratic totals (these are not necessarily mutually exclusive). Then I divided by the total number of words and got my “similarity indexes”.
 
